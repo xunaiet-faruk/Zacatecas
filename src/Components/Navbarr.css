@@ -1,0 +1,19 @@
+.dropdown-hover:hover .dropdown-menu-hover {
+    display: block !important;
+  }
+
+  
+
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+
+/* Rlogic */
+/* .dropdown-item  {
+  display: none !important;
+}
+
+.dropdown-item.show {
+  display: block !important;
+} */

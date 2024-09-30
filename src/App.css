@@ -1,0 +1,292 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.activeDay{
+  background-color: #9f342e;
+  color:#fff;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.1s;
+}
+
+
+.black-toggle {
+  color: #000 !important;
+}
+
+.no-caret .dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-menu.show {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.hero-heading {
+  font-size: 40px;
+  font-weight: bold;
+}
+.hero-subheading {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.hero-border {
+  border-bottom-right-radius: 180px;
+}
+
+.strategic-border {
+  border-top-left-radius: 180px;
+}
+
+.distance-border{
+  border-top-right-radius: 180px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #00000000;
+  /* border-radius: 50%;  */
+  padding: 10px; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1; /* Ensure the controls are visible */
+  width: auto;
+  background-color: #FAD4D4;
+}
+
+/* @media (min-width: 992px) {
+  .carousel-control-next {
+    margin-left: -100px;
+  }
+} */
+
+.carousel-control-next-icon::after {
+  content:'';
+}
+
+.carousel-control-prev-icon::after {
+  content:'';
+}
+
+.rent-example {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  position: relative;
+  padding-left: 20px; /* Adjust padding to make room for the icon */
+  color: #000; /* Text color */
+}
+
+.rent-example::before {
+  content: '✓'; 
+  font-size: 11px; /* Adjust icon size */
+  color: #fff; /* Tick color */
+  position: absolute;
+  left: 0px; 
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #571517;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dots{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100px;
+  height: auto;
+  padding: 0;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.dot1{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100px;
+  height: auto;
+  padding: 0;
+  margin-right: 60px;
+  margin-top: -10px;
+}
+
+.circle{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 80px;
+  height: auto;
+  padding: 0;
+  margin-right: -5px;
+  margin-bottom: -30px;
+}
+
+.circle1{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 80px;
+  height: auto;
+  padding: 0;
+  margin-left: 45px;
+  margin-bottom: -40px;
+}
+
+/* WhatsAppIcon.css */
+.whatsapp-icon {
+  position: fixed;
+  left: 94%;
+  top: 86%;
+  z-index: 9999;
+  animation: pulse 1.5s infinite;
+}
+.whatsapp-icon img{
+width: 90px;
+height: auto;
+object-fit: contain
+
+}
+
+
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 35px;
+  }
+  .hero-subheading {
+    font-size: 45px;
+  }
+  .hero-border {
+    border-bottom-right-radius: 120px;
+  }
+  .strategic-border {
+    border-top-left-radius: 120px;
+  }
+  .distance-border{
+    border-top-right-radius: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .uparrow-button{
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .dots{
+    margin-left: 50px;
+  }
+  .dot1{
+    margin-right: 50px;
+  }
+  .circle{
+    margin-right: 60px;
+  }
+}
+
+
+.homeHeroSection video{
+  width: 100% !important;
+}
+
+
+.newFormContainer {
+  max-width: 1200px;
+  margin: 100px auto 100px;
+}
+.newFormContainer label{
+  font-weight: 700;
+}
+.newFormContainer label, input, textarea {
+  width: 100%;
+  color: rgb(87, 21, 23);
+  margin: 0 0 10px;
+}
+
+ input, .newFormContainer textarea{
+  border: 1px solid #000;
+  border-radius: 24px;
+  padding: 10px;
+}
+
+
+.newFormContainer button{
+  background-color: rgb(87, 21, 23);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+
+.newFormContainer a{
+  text-decoration: none;
+  color: rgb(87, 21, 23);
+  font-size: 20px;
+}
+
+.newFormContainer ul{
+  padding: 0;
+}
+
+
+.text-none{
+  text-decoration: none;
+}
+
+.fc{
+  color: rgb(158, 52, 45);
+}
